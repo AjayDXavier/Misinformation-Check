@@ -1,0 +1,43 @@
+🧠 AI Misinformation Checker
+
+A modern web app built with HTML, TailwindCSS, and JavaScript that uses Google’s Gemini AI model (with integrated Google Search) to fact-check text or URLs in real-time.
+
+This project allows users to verify if a statement or article contains verified, misleading, or unverified information — displayed clearly with AI-powered reasoning and credible sources.
+
+🚀 Features
+
+✅ Text & URL Input — Paste text or a webpage link to fact-check.
+✅ AI Verification — Uses Google’s Gemini model (gemini-2.5-flash-preview-05-20) with web search for contextual validation.
+✅ Structured Results — Clearly labeled Verdict and Analysis.
+✅ Source Attribution — Displays credible URLs used by the model.
+✅ Retry Handling — Automatically retries API calls on rate-limit errors (status 429).
+
+🏗️ Tech Stack
+Component	Technology
+Frontend	HTML5, TailwindCSS
+Logic	Vanilla JavaScript (async/await + Fetch API)
+AI Model	Google Gemini 2.5 Flash Preview
+Integration	Gemini Generative Language API + Google Search Tool
+
+📂 Folder Structure
+Misinformation-Check/
+│
+├── index.html            # Main web application
+├── README.md             # Project documentation
+└── assets/               # (optional) For screenshots or logo if added later
+
+⚙️ Setup & Usage
+1️⃣ Clone the repository:
+      git clone https://github.com/AjayDXavier/Misinformation-Check.git
+      cd Misinformation-Check
+2️⃣ Open in your browser
+      Simply open the index.html file in any browser — no local server required.
+
+🧩 How It Works
+1. User enters text or URL.
+2.The app builds a fact-check prompt and sends it to the Gemini API.
+3.Gemini performs web search grounding using Google Search.
+4.The response is parsed and displayed with:
+    ->Verdict: Verified / Misleading / Unverified
+    ->Analysis: Supporting or contradictory evidence
+    ->Sources: Relevant references
